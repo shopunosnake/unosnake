@@ -1,20 +1,27 @@
+/* Général */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    scroll-behavior: smooth;
 }
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
+
+/* Header */
 header {
     background: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     padding: 20px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 header h1 {
     margin: 0;
@@ -33,13 +40,20 @@ header nav ul li a {
     text-decoration: none;
     color: #007aff;
     font-size: 1.2em;
+    transition: color 0.3s;
 }
+header nav ul li a:hover {
+    color: #005bb5;
+}
+
+/* Section Intro */
 .intro {
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
+    background: #f4f4f4;
 }
 .intro h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333;
 }
 .intro p {
@@ -55,10 +69,14 @@ header nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
 }
 .button:hover {
     background: #005bb5;
+    transform: translateY(-2px);
 }
+
+/* Footer */
 footer {
     background: #ffffff;
     border-top: 1px solid #e5e5e5;
@@ -72,7 +90,14 @@ footer p {
 footer p a {
     color: #007aff;
     text-decoration: none;
+    transition: text-decoration 0.3s;
 }
 footer p a:hover {
     text-decoration: underline;
+}
+
+/* Animations */
+.animate__animated {
+    visibility: visible;
+    animation-fill-mode: both;
 }
