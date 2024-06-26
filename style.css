@@ -113,6 +113,11 @@ header nav ul li a:hover {
     width: 100%;
     height: auto;
 }
+.pin-item p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #333;
+}
 .pin-item:hover {
     transform: translateY(-5px);
 }
