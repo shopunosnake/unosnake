@@ -40,8 +40,12 @@ nav a:hover {
     padding: 20px;
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #fff;
+}
+
+.pin h3 {
+    color: #333;
 }
 
 .pin {
