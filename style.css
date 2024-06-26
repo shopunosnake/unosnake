@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 h1, h2, h3 {
-    color: #2E8B57;
+    color: #fff;
 }
 
 .pin {
@@ -83,5 +83,7 @@ footer {
     padding: 10px;
     background-color: #2E8B57;
     color: #fff;
-    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
