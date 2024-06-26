@@ -3,84 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopUnoSnake - Plateforme d'affiliation</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>ShopUnoSnake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #89AD8B;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .cover-image {
+            width: 100%;
+            height: auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .pin {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .pin img {
+            width: 300px;
+            height: auto;
+        }
+        .pin-info {
+            padding-left: 20px;
+        }
+        .pin-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .pin-info p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>ShopUnoSnake</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="privacy-policy.html">Politique de Confidentialité</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>ShopUnoSnake</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#politique-de-confidentialite">Politique de Confidentialité</a>
+        </nav>
     </header>
-    <main>
-        <section class="intro">
-            <div class="container">
-                <div class="cover-image">
-                    <img src="https://i.pinimg.com/1200x/f3/3c/bb/f33cbb485486f23ef555778e83552602.jpg" alt="Cover Image">
-                </div>
-                <h2 class="animate__animated animate__fadeInDown">Bienvenue sur ShopUnoSnake</h2>
-                <p class="animate__animated animate__fadeInUp">Découvrez notre plateforme d'affiliation dédiée à la promotion de produits via Pinterest.</p>
-                <a class="button animate__animated animate__fadeInUp" href="https://www.pinterest.fr/shopunosnake/" target="_blank">Visitez notre Pinterest</a>
+
+    <div id="accueil" class="container">
+        <h2>Bienvenue sur ShopUnoSnake</h2>
+        <p>Découvrez notre plateforme d'affiliation dédiée à la promotion de produits via Pinterest.</p>
+        <a href="https://www.pinterest.fr/shopunosnake/" target="_blank">Visitez notre Pinterest</a>
+        
+        <h2>Nos derniers Pins</h2>
+
+        <div class="pin">
+            <img src="https://i.pinimg.com/736x/f4/a0/52/f4a0525a34da3e2a1464980e21b5454b.jpg" alt="Canapé d'Angle">
+            <div class="pin-info">
+                <h2>Canapé d'Angle Réversible et Convertible en Velours Côtelé - Élégance et Confort</h2>
+                <p>🛋️ Grand Canapé : Conçu pour 4 personnes, ce canapé d'angle de 245x85x140 cm inclut 2 coussins décoratifs. Hauteur d’assise : 37 cm.</p>
+                <p>✨ Ambiance Chaleureuse : Son velours côtelé doux et son style tendance créent une ambiance cosy et élégante, parfait pour votre salon.</p>
+                <p>🔄 Angle Réversible : Méridienne à gauche ou à droite selon vos besoins. Adaptable pour maximiser votre confort.</p>
+                <p>🛏️ Convertible avec Coffre : Se transforme en couchage de 208x130 cm. Grand coffre pour stocker couettes et coussins.</p>
+                <p>🐾 Pet Friendly : Tissu résistant aux égratignures des animaux.</p>
+                <p>🛠️ Montage Facile : Livré en 3 colis avec notice pour un montage rapide et facile. Garantie 2 ans.</p>
             </div>
-        </section>
-        <section class="pins">
-            <div class="container">
-                <h3 class="animate__animated animate__fadeInUp">Nos derniers Pins</h3>
-                <div class="pin-gallery animate__animated animate__fadeInUp">
-                    <div class="pin-item">
-                        <a href="https://www.pinterest.fr/pin/1042442644990031945/" target="_blank">
-                            <img src="https://i.pinimg.com/736x/f4/a0/52/f4a0525a34da3e2a1464980e21b5454b.jpg" alt="Un plaid douillet pour vos soirées">
-                        </a>
-                        <p>Un plaid douillet pour vos soirées</p>
-                    </div>
-                    <div class="pin-item">
-                        <a href="https://www.pinterest.fr/pin/1042442644990077222/" target="_blank">
-                            <img src="https://i.pinimg.com/736x/77/f9/e6/77f9e6bfb7bfd7e7b3db50bf2acf0866.jpg" alt="Éclairage scandinave moderne">
-                        </a>
-                        <p>Éclairage scandinave moderne</p>
-                    </div>
-                    <div class="pin-item">
-                        <a href="https://www.pinterest.fr/pin/1042442644990106034/" target="_blank">
-                            <img src="https://i.pinimg.com/736x/c9/89/e2/c989e2d4f450f94db415526856b492c1.jpg" alt="Décoration minimaliste et élégante">
-                        </a>
-                        <p>Décoration minimaliste et élégante</p>
-                    </div>
-                    <div class="pin-item">
-                        <a href="https://www.pinterest.fr/pin/1042442644990183802/" target="_blank">
-                            <img src="https://i.pinimg.com/736x/96/5f/9a/965f9a2a863489539e6ef616b49b1856.jpg" alt="Mobilier en bois naturel">
-                        </a>
-                        <p>Mobilier en bois naturel</p>
-                    </div>
-                    <div class="pin-item">
-                        <a href="https://www.pinterest.fr/pin/1042442644990422279/" target="_blank">
-                            <img src="https://i.pinimg.com/736x/1b/01/70/1b0170ece7d097e172c693d4486c5813.jpg" alt="Rangement élégant et pratique">
-                        </a>
-                        <p>Rangement élégant et pratique</p>
-                    </div>
-                    <div class="pin-item">
-                        <a href="https://www.pinterest.fr/pin/1042442644990422534/" target="_blank">
-                            <img src="https://i.pinimg.com/736x/b7/1b/af/b71baf6052677e0e252dd8e2dad54229.jpg" alt="Plantes d'intérieur pour un espace vert">
-                        </a>
-                        <p>Plantes d'intérieur pour un espace vert</p>
-                    </div>
-                </div>
+        </div>
+
+        <div class="pin">
+            <img src="https://i.pinimg.com/736x/77/f9/e6/77f9e6bfb7bfd7e7b3db50bf2acf0866.jpg" alt="Illustration Abstraite">
+            <div class="pin-info">
+                <h2>Illustration Abstraite sur Toile</h2>
+                <p>🖼️ Illustration Haute Définition : Imprimée sur toile non tissée de haute qualité, avec des couleurs parfaites et des images nettes.</p>
+                <p>🌟 Cadeau Idéal : Parfait pour Noël, le Nouvel An, les mariages, anniversaires, et autres occasions spéciales pour parents et amis.</p>
+                <p>🏡 Scène Décorative : Convient à la décoration de chambres, salons, bureaux, hôtels, restaurants, et plus encore.</p>
+                <p>✨ Sans Cadre : Vendu sans cadre, avec des bords blancs pour un ajout facile de cadres ou pour une décoration directe.</p>
             </div>
-        </section>
-    </main>
-    <footer>
+        </div>
+
+        <div class="pin">
+            <img src="https://i.pinimg.com/736x/c9/89/e2/c989e2d4f450f94db415526856b492c1.jpg" alt="Statue de Succès">
+            <div class="pin-info">
+                <h2>Statue de Succès Élégante</h2>
+                <p>📈 Décoration Élégante : Symbole de la volonté d’atteindre la réussite, idéale comme cadeau ou source d’inspiration.</p>
+                <p>🛠️ Objet Fabriqué à la Main : Statue en résine de marbrite de qualité supérieure avec socle stable gris argenté. Taille : 16 x 8 x 29 cm. Design unique avec figurine argentée sur un escalier gris/noir.</p>
+                <p>🌟 Protection Supérieure : Picots de protection sous la figurine pour éviter les rayures, parfaite pour le salon, le bureau, la vitrine, l’étagère, ou le rebord de fenêtre.</p>
+                <p>📦 Emballage Sécurisé : Expédiée en toute sécurité dans un élégant carton de protection.</p>
+                <p>💬 Service Client : Chaque figurine est unique. Pour toute question, contactez le vendeur pour une assistance rapide.</p>
+            </div>
+        </div>
+
+        <div class="pin">
+            <img src="https://i.pinimg.com/736x/96/5f/9a/965f9a2a863489539e6ef616b49b1856.jpg" alt="Patate Positive">
+            <div class="pin-info">
+                <h2>Patate Positive</h2>
+                <p>📦 Contenu de la commande : Recevez une boule de laine en forme de patate de 7 cm avec un mot d’encouragement imprimé et fixé.</p>
+                <p>🎁 Cadeau Original : Offrez une dose de bonne humeur pour anniversaires, Noël, ou pour égayer la journée de vos proches. Parfait pour tous.</p>
+                <p>🥔 Gardez la Patate : Cette patate est un gourou de la bonne humeur, envoyant des ondes positives et des sourires.</p>
+                <p>🏠 Décoration Ludique : Ajoutez de l’humour à votre maison. Placez cette patate dans le salon, la chambre, le bureau, ou les toilettes.</p>
+                <p>✅ Qualité Supérieure : Fabriquée avec du fil de laine premium, cette Patate Positive est durable et résistante aux éclats de rire.</p>
+            </div>
+        </div>
+
+        <div class="pin">
+            <img src="https://i.pinimg.com/736x/1b/01/70/1b0170ece7d097e172c693d4486c5813.jpg" alt="Full Length Mirror">
+            <div class="pin-info">
+                <h2>Full Length Mirror</h2>
+                <p>🌟 Full Length Mirror: Available in 65” x 22” & 18” x 58” with an arched top for a complete reflection.</p>
+                <p>✨ Premium Frame: Made of premium aluminum with a thin, classic design for a luxurious look.</p>
+                <p>💎 Shatterproof Glass: Explosion-proof membrane glass provides HD crystal clear images and natural reflection.</p>
+                <p>🔄 Multi-Use: Can be leaned against a wall, free-standing, or mounted vertically/horizontally for versatile placement.</p>
+                <p>🏠 Wide Application: Ideal for bathrooms, bedrooms, entryways, living rooms, and home gyms.</p>
+            </div>
+        </div>
+
+        <div class="pin">
+            <img src="https://i.pinimg.com/736x/b7/1b/af/b71baf6052677e0e252dd8e2dad54229.jpg" alt="Wood Knot Home Decor">
+            <div class="pin-info">
+                <h2>Wood Knot Home Decor</h2>
+                <p>🌿 Natural Materials: High-quality wood, smooth and burr-free, ensuring long-lasting use. Each piece is unique, adding a natural touch to your decor.</p>
+                <p>🎨 Stylish Design: Perfect for bohemian, minimalist, and modern farmhouse styles. Ideal for shelves, coffee tables, and more.</p>
+                <p>📏 Perfect Size: Measures 11cm/4.33 inches. This wooden knot adds a minimalist elegance to your home.</p>
+                <p>🏡 Versatile Use: Great for living rooms, kitchens, fireplaces, bedrooms, offices, and entryway tables. Enhances any space seamlessly.</p>
+                <p>🎁 Ideal Gift: Perfect for friends, family, or colleagues on special occasions like Mother’s Day, birthdays, and housewarmings.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="politique-de-confidentialite">
         <div class="container">
-            <p>ShopUnoSnake &copy; 2023</p>
-            <p><a href="privacy-policy.html">Politique de Confidentialité</a></p>
+            <h2>Politique de Confidentialité</h2>
+            <p>Votre politique de confidentialité ici...</p>
         </div>
     </footer>
 </body>
