@@ -40,23 +40,42 @@ nav a:hover {
     padding: 20px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #2E8B57;
 }
 
 .pin {
     display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .pin img {
-    width: 300px;
+    width: 100%;
     height: auto;
-    margin-right: 20px;
 }
 
 .pin-info {
-    max-width: 600px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .pin {
+        flex-direction: row;
+    }
+
+    .pin img {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .pin-info {
+        padding: 0;
+    }
 }
 
 footer {
@@ -64,7 +83,5 @@ footer {
     padding: 10px;
     background-color: #2E8B57;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
